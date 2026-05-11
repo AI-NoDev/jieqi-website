@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jieqi Almanac · 节气札 — Support & FAQ</title>
+  <meta name="description" content="Support page for Jieqi Almanac — the 24 Chinese solar terms iOS app. FAQ, contact, privacy policy.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    :root {
+      --paper: #F5EADB;
+      --paper-deep: #E2CFAE;
+      --ink: #2E3C48;
+      --vermilion: #B93A1D;
+      --soft: #5A4A2F;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: 'Noto Serif SC', 'Songti SC', 'Times New Roman', serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    }
+    .logo {
+      display: inline-block;
+      width: 96px; height: 96px;
+      border-radius: 22px;
+      background: var(--paper);
+      box-shadow: 0 4px 24px rgba(46, 60, 72, 0.15);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+    .logo img { width: 100%; height: 100%; display: block; }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    h1 .sub {
+      display: block;
+      font-size: 1rem;
+      color: var(--soft);
+      letter-spacing: 0.2em;
+      margin-top: 0.4rem;
+      font-weight: normal;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      color: var(--soft);
+      margin-top: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1.5rem;
+      background: var(--paper);
+      border-top: 1px solid rgba(90, 74, 47, 0.15);
+      border-bottom: 1px solid rgba(90, 74, 47, 0.15);
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+      transition: border-color 0.2s;
+    }
+    nav a:hover { border-bottom-color: var(--vermilion); }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    section { margin-bottom: 3.5rem; }
+    h2 {
+      font-size: 1.5rem;
+      color: var(--vermilion);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+      border-left: 4px solid var(--vermilion);
+      padding-left: 0.8rem;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: var(--ink);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p { margin-bottom: 1rem; color: var(--ink); }
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    li { margin-bottom: 0.4rem; }
+    a { color: var(--vermilion); }
+    .muted { color: var(--soft); font-size: 0.9rem; }
+    code {
+      background: var(--paper-deep);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'SF Mono', Menlo, monospace;
+      font-size: 0.92em;
+    }
+    .lang-switch {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .lang-switch a { margin: 0 0.5rem; color: var(--soft); text-decoration: none; }
+    .lang-switch a.active { color: var(--vermilion); font-weight: 600; }
+    footer {
+      padding: 2rem 1.5rem 3rem;
+      text-align: center;
+      color: var(--soft);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(90, 74, 47, 0.15);
+    }
+    footer a { color: var(--soft); margin: 0 0.6rem; }
+    [hidden] { display: none !important; }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      header { padding: 3rem 1rem 2rem; }
+      main { padding: 2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="icon.png" alt="Jieqi Almanac icon"></div>
+  <h1>
+    Jieqi Almanac
+    <span class="sub">廿四節氣 · 節氣札</span>
+  </h1>
+  <p class="tagline" data-i18n="tagline">A poetic diary of the 24 Chinese solar terms.</p>
+</header>
+
+<div class="lang-switch">
+  <a href="#" data-lang="en" class="active">EN</a>
+  <a href="#" data-lang="zh-Hans">简</a>
+  <a href="#" data-lang="zh-Hant">繁</a>
+  <a href="#" data-lang="ja">日</a>
+  <a href="#" data-lang="ko">한</a>
+  <a href="#" data-lang="vi">VI</a>
+</div>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+</nav>
+
+<main>
+
+<section id="about">
+  <h2 data-i18n="about_title">About</h2>
+  <p data-i18n="about_p1">
+    Jieqi Almanac is an offline iOS app that tracks the 24 traditional Chinese solar terms (jieqi 節氣) — a 2,000-year-old astronomical calendar system that divides the solar year into 15° arcs of the Sun's apparent ecliptic longitude.
+  </p>
+  <p data-i18n="about_p2">
+    Each term is computed to the second using the same astronomical algorithm published by Purple Mountain Observatory. The app includes 72 pentads (三候), curated classical poems, year almanac, and Home Screen / Lock Screen widgets.
+  </p>
+  <p data-i18n="about_p3">
+    Available in 6 languages: Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Vietnamese. One-time purchase — no subscriptions, no ads, no data collection.
+  </p>
+</section>
+
+<section id="faq">
+  <h2 data-i18n="faq_title">FAQ</h2>
+
+  <h3 data-i18n="faq_q1">Why does the app cost money?</h3>
+  <p data-i18n="faq_a1">
+    Jieqi Almanac is a one-time purchase. We don't show ads, sell your data, or charge subscription fees. The price covers ongoing development, Apple Developer Program fees, and our commitment to keep the app fully offline and ad-free.
+  </p>
+
+  <h3 data-i18n="faq_q2">Does the app collect any data?</h3>
+  <p data-i18n="faq_a2">
+    No. Jieqi Almanac does not collect, transmit, or store any personal data. The app makes zero network requests — all calculations and content are bundled within the app itself. See our <a href="privacy.html">Privacy Policy</a> for details.
+  </p>
+
+  <h3 data-i18n="faq_q3">How accurate are the solar term times?</h3>
+  <p data-i18n="faq_a3">
+    Solar term times are computed to the second using the VSOP87 / Meeus astronomical algorithm, the same standard used by Purple Mountain Observatory. The app covers years 1900 through 2100. Typical accuracy is within a few seconds of authoritative ephemerides.
+  </p>
+
+  <h3 data-i18n="faq_q4">Why is the original Chinese text not translated?</h3>
+  <p data-i18n="faq_a4">
+    Classical Chinese poetry and the names of solar terms carry meanings that often dissolve in translation. We preserve the original Chinese as a fixed display, with translations layered above as overlays — so you can appreciate both the original sound and the translated meaning.
+  </p>
+
+  <h3 data-i18n="faq_q5">Will Apple Watch / iPad / macOS be supported?</h3>
+  <p data-i18n="faq_a5">
+    iPad is supported in version 1.0. Apple Watch and macOS support are under consideration based on demand.
+  </p>
+
+  <h3 data-i18n="faq_q6">My widget isn't updating. What should I do?</h3>
+  <p data-i18n="faq_a6">
+    Widgets refresh based on iOS scheduling. If a widget seems stuck, try removing and re-adding it from your Home Screen. Make sure background app refresh is enabled in iOS Settings → Jieqi Almanac.
+  </p>
+
+  <h3 data-i18n="faq_q7">How do I request a refund?</h3>
+  <p data-i18n="faq_a7">
+    Refunds are handled by Apple, not by us. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> within 14 days of purchase.
+  </p>
+</section>
+
+<section id="contact">
+  <h2 data-i18n="contact_title">Contact</h2>
+  <p data-i18n="contact_p1">
+    For bug reports, feature requests, or general questions:
+  </p>
+  <p>
+    <strong>Email:</strong> <code>support@jieqi.app</code>
+  </p>
+  <p class="muted" data-i18n="contact_note">
+    We typically respond within 2-3 business days. Please include your iOS version and a description of the issue.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Jieqi Almanac · 節氣札</p>
+  <p>
+    <a href="privacy.html">Privacy</a> ·
+    <a href="terms.html">Terms</a> ·
+    <a href="#contact">Contact</a>
+  </p>
+</footer>
+
+<script>
+  // Multilingual content (lightweight — no framework)
+  const translations = {
+    en: {
+      tagline: "A poetic diary of the 24 Chinese solar terms.",
+      about_title: "About",
+      about_p1: "Jieqi Almanac is an offline iOS app that tracks the 24 traditional Chinese solar terms (jieqi 節氣) — a 2,000-year-old astronomical calendar system that divides the solar year into 15° arcs of the Sun's apparent ecliptic longitude.",
+      about_p2: "Each term is computed to the second using the same astronomical algorithm published by Purple Mountain Observatory. The app includes 72 pentads (三候), curated classical poems, year almanac, and Home Screen / Lock Screen widgets.",
+      about_p3: "Available in 6 languages: Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Vietnamese. One-time purchase — no subscriptions, no ads, no data collection.",
+      faq_title: "FAQ",
+      faq_q1: "Why does the app cost money?",
+      faq_a1: "Jieqi Almanac is a one-time purchase. We don't show ads, sell your data, or charge subscription fees. The price covers ongoing development, Apple Developer Program fees, and our commitment to keep the app fully offline and ad-free.",
+      faq_q2: "Does the app collect any data?",
+      faq_a2: 'No. Jieqi Almanac does not collect, transmit, or store any personal data. The app makes zero network requests — all calculations and content are bundled within the app itself. See our <a href="privacy.html">Privacy Policy</a> for details.',
+      faq_q3: "How accurate are the solar term times?",
+      faq_a3: "Solar term times are computed to the second using the VSOP87 / Meeus astronomical algorithm, the same standard used by Purple Mountain Observatory. The app covers years 1900 through 2100. Typical accuracy is within a few seconds of authoritative ephemerides.",
+      faq_q4: "Why is the original Chinese text not translated?",
+      faq_a4: "Classical Chinese poetry and the names of solar terms carry meanings that often dissolve in translation. We preserve the original Chinese as a fixed display, with translations layered above as overlays — so you can appreciate both the original sound and the translated meaning.",
+      faq_q5: "Will Apple Watch / iPad / macOS be supported?",
+      faq_a5: "iPad is supported in version 1.0. Apple Watch and macOS support are under consideration based on demand.",
+      faq_q6: "My widget isn't updating. What should I do?",
+      faq_a6: "Widgets refresh based on iOS scheduling. If a widget seems stuck, try removing and re-adding it from your Home Screen. Make sure background app refresh is enabled in iOS Settings → Jieqi Almanac.",
+      faq_q7: "How do I request a refund?",
+      faq_a7: 'Refunds are handled by Apple, not by us. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> within 14 days of purchase.',
+      contact_title: "Contact",
+      contact_p1: "For bug reports, feature requests, or general questions:",
+      contact_note: "We typically respond within 2-3 business days. Please include your iOS version and a description of the issue."
+    },
+    "zh-Hans": {
+      tagline: "随身的廿四节气古卷。",
+      about_title: "关于",
+      about_p1: "节气札是一款离线 iOS 应用，记录中国传统的廿四节气 — 一套延续 2000 年的天文历法系统，将太阳周年运动按黄经 15° 等分。",
+      about_p2: "每一节气精确到秒，采用紫金山天文台同款天文算法。应用包含七十二候、节气古诗、历年年表，以及桌面与锁屏小组件。",
+      about_p3: "支持 6 种语言：简体中文、繁体中文、英文、日文、韩文、越南文。一次买断 — 无订阅、无广告、不收集任何数据。",
+      faq_title: "常见问题",
+      faq_q1: "为什么这个 app 要付费？",
+      faq_a1: "节气札是一次买断的应用。我们不展示广告、不出售用户数据、不收订阅费。价格用于持续开发、Apple 开发者会费，以及我们坚持完全离线、无广告的承诺。",
+      faq_q2: "应用会收集任何数据吗？",
+      faq_a2: '不会。节气札不收集、不传输、不存储任何个人数据。应用零网络请求 — 所有计算和内容都打包在应用内部。详见<a href="privacy.html">隐私政策</a>。',
+      faq_q3: "节气时刻有多精准？",
+      faq_a3: "节气时刻用 VSOP87 / Meeus 天文算法精确到秒，与紫金山天文台同款标准。覆盖 1900 至 2100 年。典型精度与权威星历表相差几秒以内。",
+      faq_q4: "为什么中文原文不翻译？",
+      faq_a4: "中国古诗与节气名称承载的意境往往在翻译中流失。我们保留中文原文作固定显示，译文以叠加方式覆盖其上 — 让你既能领略原文音韵，又能理解翻译大意。",
+      faq_q5: "会支持 Apple Watch / iPad / macOS 吗？",
+      faq_a5: "1.0 版本支持 iPad。Apple Watch 和 macOS 支持视用户需求考虑。",
+      faq_q6: "小组件不更新怎么办？",
+      faq_a6: "小组件按 iOS 系统调度刷新。如果显得不动，尝试从主屏幕移除后重新添加。确认 iOS 设置 → 节气札 中后台应用刷新已开启。",
+      faq_q7: "如何申请退款？",
+      faq_a7: '退款由 Apple 处理。请在购买后 14 天内访问 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>。',
+      contact_title: "联系",
+      contact_p1: "Bug 反馈、功能建议或一般问题：",
+      contact_note: "我们通常在 2-3 个工作日内回复。请附上 iOS 版本和问题描述。"
+    },
+    "zh-Hant": {
+      tagline: "隨身的廿四節氣古卷。",
+      about_title: "關於",
+      about_p1: "節氣札是一款離線 iOS 應用，記錄中國傳統的廿四節氣 — 一套延續 2000 年的天文曆法系統，將太陽週年運動按黃經 15° 等分。",
+      about_p2: "每一節氣精確到秒，採用紫金山天文台同款天文算法。應用包含七十二候、節氣古詩、歷年年表，以及桌面與鎖屏小組件。",
+      about_p3: "支援 6 種語言：簡體中文、繁體中文、英文、日文、韓文、越南文。一次買斷 — 無訂閱、無廣告、不收集任何資料。",
+      faq_title: "常見問題",
+      faq_q1: "為什麼這個 app 要付費？",
+      faq_a1: "節氣札是一次買斷的應用。我們不展示廣告、不出售用戶資料、不收訂閱費。價格用於持續開發、Apple 開發者會費，以及我們堅持完全離線、無廣告的承諾。",
+      faq_q2: "應用會收集任何資料嗎？",
+      faq_a2: '不會。節氣札不收集、不傳輸、不儲存任何個人資料。應用零網路請求 — 所有計算和內容都打包在應用內部。詳見<a href="privacy.html">隱私政策</a>。',
+      faq_q3: "節氣時刻有多精準？",
+      faq_a3: "節氣時刻用 VSOP87 / Meeus 天文算法精確到秒，與紫金山天文台同款標準。涵蓋 1900 至 2100 年。典型精度與權威星曆表相差幾秒以內。",
+      faq_q4: "為什麼中文原文不翻譯？",
+      faq_a4: "中國古詩與節氣名稱承載的意境往往在翻譯中流失。我們保留中文原文作固定顯示，譯文以疊加方式覆蓋其上 — 讓你既能領略原文音韻，又能理解翻譯大意。",
+      faq_q5: "會支援 Apple Watch / iPad / macOS 嗎？",
+      faq_a5: "1.0 版本支援 iPad。Apple Watch 和 macOS 支援視用戶需求考慮。",
+      faq_q6: "小組件不更新怎麼辦？",
+      faq_a6: "小組件按 iOS 系統調度刷新。如果顯得不動，嘗試從主屏幕移除後重新加入。確認 iOS 設定 → 節氣札 中背景應用程式重新整理已開啟。",
+      faq_q7: "如何申請退款？",
+      faq_a7: '退款由 Apple 處理。請在購買後 14 天內訪問 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>。',
+      contact_title: "聯絡",
+      contact_p1: "Bug 反饋、功能建議或一般問題：",
+      contact_note: "我們通常在 2-3 個工作日內回覆。請附上 iOS 版本和問題描述。"
+    },
+    ja: {
+      tagline: "携帯できる二十四節気の古典帖。",
+      about_title: "概要",
+      about_p1: "節気帖は、中国伝統の二十四節気を記録するオフライン iOS アプリです — 太陽の年間運動を黄経 15° 間隔で分ける、2,000 年の歴史を持つ天文暦法。",
+      about_p2: "各節気は秒単位で精密計算、紫金山天文台と同じ天文算法を採用。七十二候、節気漢詩、歴年年表、ホーム画面とロック画面のウィジェットを収録。",
+      about_p3: "6 言語対応：簡体字中国語、繁体字中国語、英語、日本語、韓国語、ベトナム語。買い切り型 — サブスクなし、広告なし、データ収集なし。",
+      faq_title: "よくある質問",
+      faq_q1: "なぜ有料ですか？",
+      faq_a1: "節気帖は買い切り型のアプリです。広告表示、ユーザーデータの販売、サブスクリプション料金を一切行いません。価格は継続的な開発、Apple Developer Program 会費、そして完全オフライン・広告なしを維持するコミットメントに使われます。",
+      faq_q2: "データを収集しますか？",
+      faq_a2: 'いいえ。節気帖は個人情報を収集、送信、保存しません。アプリはネットワークリクエストをゼロ件 — すべての計算とコンテンツはアプリ内に同梱されています。詳細は<a href="privacy.html">プライバシーポリシー</a>へ。',
+      faq_q3: "節気の時刻はどれくらい精確ですか？",
+      faq_a3: "節気時刻は VSOP87 / Meeus 天文算法により秒単位で計算、紫金山天文台と同じ標準。1900 年から 2100 年までをカバー。典型的精度は権威ある天体暦と数秒以内。",
+      faq_q4: "なぜ中国語原文は翻訳されないのですか？",
+      faq_a4: "中国の古典詩と節気名称が持つ意境は、翻訳ではしばしば失われます。原文の中国語を固定表示として保ち、翻訳を上に重ねる方式 — 原文の音韻と翻訳の意味、両方を味わえます。",
+      faq_q5: "Apple Watch / iPad / macOS に対応しますか？",
+      faq_a5: "iPad は 1.0 で対応済み。Apple Watch と macOS への対応は需要に応じて検討中。",
+      faq_q6: "ウィジェットが更新されません。どうすれば？",
+      faq_a6: "ウィジェットは iOS のスケジュールに基づき更新されます。停止しているように見える場合、ホーム画面から削除して再追加してください。iOS 設定 → 節気帖 でバックグラウンド App 更新が有効か確認。",
+      faq_q7: "返金はどうすれば？",
+      faq_a7: '返金は Apple が処理します。購入後 14 日以内に <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> にアクセス。',
+      contact_title: "お問い合わせ",
+      contact_p1: "バグ報告、機能リクエスト、一般的な質問：",
+      contact_note: "通常 2-3 営業日以内に返信します。iOS バージョンと問題の説明をお書き添えください。"
+    },
+    ko: {
+      tagline: "휴대용 24절기 고전 책력.",
+      about_title: "소개",
+      about_p1: "절기첩은 중국 전통의 24절기를 기록하는 오프라인 iOS 앱입니다 — 태양의 연중 운동을 황경 15° 간격으로 나누는 2,000 년 역사의 천문 역법.",
+      about_p2: "각 절기는 초 단위로 정밀 계산하며, 자금산 천문대와 같은 천문 알고리즘 채택. 칠십이후, 절기 한시, 연도별 연표, 홈 화면 및 잠금 화면 위젯 수록.",
+      about_p3: "6 언어 지원: 간체 중국어, 번체 중국어, 영어, 일본어, 한국어, 베트남어. 일회 구매 — 구독 없음, 광고 없음, 데이터 수집 없음.",
+      faq_title: "자주 묻는 질문",
+      faq_q1: "왜 유료인가요?",
+      faq_a1: "절기첩은 일회 구매 앱입니다. 광고 표시, 사용자 데이터 판매, 구독료를 전혀 받지 않습니다. 가격은 지속적인 개발, Apple Developer Program 회비, 그리고 완전 오프라인・광고 없음을 유지하는 약속에 사용됩니다.",
+      faq_q2: "데이터를 수집하나요?",
+      faq_a2: '아니요. 절기첩은 개인 정보를 수집, 전송, 저장하지 않습니다. 앱은 네트워크 요청 0 건 — 모든 계산과 콘텐츠는 앱 내부에 번들. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>에서.',
+      faq_q3: "절기 시각은 얼마나 정확한가요?",
+      faq_a3: "절기 시각은 VSOP87 / Meeus 천문 알고리즘으로 초 단위 계산, 자금산 천문대와 같은 표준. 1900–2100 년 지원. 일반적으로 권위 있는 천체력과 몇 초 이내 차이.",
+      faq_q4: "왜 중국어 원문은 번역하지 않나요?",
+      faq_a4: "중국 고전시와 절기 이름이 담은 의경은 번역에서 종종 사라집니다. 중국어 원문을 고정 표시로 유지하고, 번역을 그 위에 겹쳐 놓는 방식 — 원문의 운율과 번역의 의미를 모두 누릴 수 있습니다.",
+      faq_q5: "Apple Watch / iPad / macOS를 지원하나요?",
+      faq_a5: "iPad는 1.0에서 지원. Apple Watch와 macOS 지원은 수요에 따라 검토 중.",
+      faq_q6: "위젯이 업데이트되지 않아요. 어떻게 해야 하나요?",
+      faq_a6: "위젯은 iOS 스케줄에 따라 새로 고침됩니다. 멈춘 듯하면 홈 화면에서 삭제 후 다시 추가해보세요. iOS 설정 → 절기첩 에서 배경 앱 새로 고침이 켜져 있는지 확인.",
+      faq_q7: "환불은 어떻게 하나요?",
+      faq_a7: '환불은 Apple이 처리합니다. 구매 후 14 일 이내 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> 방문.',
+      contact_title: "연락",
+      contact_p1: "버그 신고, 기능 요청, 일반 문의:",
+      contact_note: "일반적으로 2-3 영업일 이내에 답변합니다. iOS 버전과 문제 설명을 함께 보내주세요."
+    },
+    vi: {
+      tagline: "Cuốn niên lịch 24 tiết khí cầm tay.",
+      about_title: "Giới thiệu",
+      about_p1: "Tiết Khí Almanac là ứng dụng iOS ngoại tuyến ghi lại 24 tiết khí truyền thống Trung Hoa — hệ thống lịch thiên văn 2.000 năm tuổi, chia chuyển động hằng năm của Mặt Trời thành các cung 15° hoàng kinh.",
+      about_p2: "Mỗi tiết khí được tính chính xác đến từng giây, dùng cùng thuật toán thiên văn của Đài Thiên văn Tử Kim Sơn. Bao gồm 72 hậu, thơ Hán tiết khí, niên lịch, widget Home Screen và Lock Screen.",
+      about_p3: "Hỗ trợ 6 ngôn ngữ: Trung giản thể, Trung phồn thể, Anh, Nhật, Hàn, Việt. Mua một lần — không gói thuê bao, không quảng cáo, không thu thập dữ liệu.",
+      faq_title: "Câu hỏi thường gặp",
+      faq_q1: "Tại sao ứng dụng tính phí?",
+      faq_a1: "Tiết Khí Almanac là ứng dụng mua một lần. Chúng tôi không hiển thị quảng cáo, không bán dữ liệu người dùng, không thu phí thuê bao. Giá tiền dùng cho phát triển liên tục, phí Apple Developer Program, và cam kết duy trì hoàn toàn ngoại tuyến, không quảng cáo.",
+      faq_q2: "Ứng dụng có thu thập dữ liệu không?",
+      faq_a2: 'Không. Tiết Khí Almanac không thu thập, truyền tải hay lưu trữ bất kỳ dữ liệu cá nhân nào. Ứng dụng không có yêu cầu mạng — mọi tính toán và nội dung được đóng gói bên trong ứng dụng. Chi tiết tại <a href="privacy.html">Chính sách Bảo mật</a>.',
+      faq_q3: "Thời gian tiết khí chính xác đến mức nào?",
+      faq_a3: "Thời gian tiết khí được tính đến từng giây bằng thuật toán thiên văn VSOP87 / Meeus, cùng tiêu chuẩn của Đài Thiên văn Tử Kim Sơn. Phạm vi từ 1900–2100. Độ chính xác điển hình chênh lệch vài giây so với lịch thiên văn chính thức.",
+      faq_q4: "Tại sao văn bản tiếng Trung không được dịch?",
+      faq_a4: "Thơ Hán cổ và tên các tiết khí mang ý nghĩa thường bị mất trong bản dịch. Chúng tôi giữ nguyên tiếng Trung làm hiển thị cố định, với bản dịch chồng lên trên — để bạn cảm nhận cả âm hưởng nguyên bản và ý nghĩa bản dịch.",
+      faq_q5: "Có hỗ trợ Apple Watch / iPad / macOS không?",
+      faq_a5: "iPad đã được hỗ trợ trong phiên bản 1.0. Apple Watch và macOS đang được cân nhắc dựa trên nhu cầu.",
+      faq_q6: "Widget của tôi không cập nhật. Phải làm sao?",
+      faq_a6: "Widget làm mới theo lịch trình của iOS. Nếu trông như bị kẹt, thử xóa rồi thêm lại từ Home Screen. Đảm bảo Background App Refresh được bật trong Cài đặt iOS → Jieqi Almanac.",
+      faq_q7: "Tôi muốn hoàn tiền thì sao?",
+      faq_a7: 'Hoàn tiền do Apple xử lý. Vui lòng truy cập <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> trong vòng 14 ngày sau khi mua.',
+      contact_title: "Liên hệ",
+      contact_p1: "Báo lỗi, yêu cầu tính năng, hoặc câu hỏi chung:",
+      contact_note: "Chúng tôi thường phản hồi trong 2-3 ngày làm việc. Vui lòng kèm theo phiên bản iOS và mô tả vấn đề."
+    }
+  };
+
+  function setLang(lang) {
+    if (!translations[lang]) return;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key]) el.innerHTML = translations[lang][key];
+    });
+    document.querySelectorAll('.lang-switch a').forEach(a => {
+      a.classList.toggle('active', a.getAttribute('data-lang') === lang);
+    });
+    try { localStorage.setItem('jieqi-lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang-switch a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      setLang(a.getAttribute('data-lang'));
+    });
+  });
+
+  // Detect initial language
+  let initial = 'en';
+  try { initial = localStorage.getItem('jieqi-lang') || initial; } catch (e) {}
+  if (!translations[initial]) {
+    const browserLang = (navigator.language || 'en').toLowerCase();
+    if (browserLang.startsWith('zh-tw') || browserLang.startsWith('zh-hk')) initial = 'zh-Hant';
+    else if (browserLang.startsWith('zh')) initial = 'zh-Hans';
+    else if (browserLang.startsWith('ja')) initial = 'ja';
+    else if (browserLang.startsWith('ko')) initial = 'ko';
+    else if (browserLang.startsWith('vi')) initial = 'vi';
+  }
+  setLang(initial);
+</script>
+
+</body>
+</html>
